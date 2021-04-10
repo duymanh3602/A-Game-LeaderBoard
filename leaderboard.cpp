@@ -1,11 +1,13 @@
 #include<iostream>
 #include<fstream>
 #include<vector>
+
 using namespace std;
+
 int main ()
 {
-    ifstream nameInput("name.txt");
-    ifstream scoreInput("score.txt");
+    ifstream nameInput("name.txt");//your name input file here
+    ifstream scoreInput("score.txt");//your score input file here
     vector<int>ScoreIn;
     vector<string>NameIn;
     while (!scoreInput.eof())
@@ -18,7 +20,7 @@ int main ()
         NameIn.push_back(nameIn);
     }
         int temp=1;
-    while (temp!=4)
+    while (temp!=4)//how much top-player have you want 
     {
         int dele;
         int maxScore=0;
